@@ -15,7 +15,6 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
       <ul className="space-y-2 text-sm w-full">
-  ...existing contact list items unchanged...
 </ul>
 
 <nav className="mt-6 pt-6 border-t border-border flex flex-col gap-3 text-sm w-full">
@@ -68,7 +67,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       </div>
 
       <footer className="max-w-6xl mx-auto px-6 py-10 mt-10 border-t border-border text-xs text-muted-foreground text-center">
-        © {new Date().getFullYear()}. Jing Qi Chong. Template inspired by academic personal pages.
+        © {new Date().getFullYear()}. Jing Qi Chong. This webpage is a template inspired by academic personal pages.
       </footer>
     </div>
   );

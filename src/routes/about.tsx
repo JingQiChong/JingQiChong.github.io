@@ -52,6 +52,7 @@ function About() {
                 <div className="font-semibold text-pretty">Bachelor of Science Honours (BSc Hons) · Biological Sciences (Genetics)</div>
                 <div className="text-sm text-muted-foreground whitespace-nowrap shrink-0 mt-0.5">2019-2022</div>
               </div>
+              <div className="text-sm text-muted-foreground mt-0.5">University of Edinburgh</div>
             </div>
           </li>
         </ul>
