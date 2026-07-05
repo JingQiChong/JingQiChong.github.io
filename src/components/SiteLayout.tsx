@@ -1,14 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Mail, Twitter, Linkedin, GraduationCap } from "lucide-react";
 import type { ReactNode } from "react";
-import profilePic from '../assets/profile.jpg';
+import profilePic from '../assets/profile_pic.jpg';
 
 const navItems = [
   { to: "/", label: "Jing Qi Chong 张靖启" },
   { to: "/about", label: "About Me" },
   { to: "/projects", label: "Projects" },
   //{ to: "/publications", label: "Publications" },
-  { to: "/honors", label: "Resume/CV" },
+  //{ to: "/Resume", label: "Resume/CV" },
 ] as const;
 
 export function SiteLayout({ children }: { children: ReactNode }) {

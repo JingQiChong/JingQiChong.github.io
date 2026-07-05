@@ -1,10 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { GraduationCap, Briefcase } from "lucide-react";
-import AllureAI from '../assets/allureai.jpg';
 import Roslin from '../assets/Roslin.png';
-import Bonza from '../assets/bonza.jpg';
-import Pomona from '../assets/pomona.png';
 import Imperial from '../assets/imperial.png';
 import UoE from '../assets/UoE.jpg';
 
