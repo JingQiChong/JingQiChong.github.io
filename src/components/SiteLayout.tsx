@@ -14,22 +14,22 @@ const navItems = [
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
-      <ul className="space-y-2 text-sm w-full">
-</ul>
-
-<nav className="mt-6 pt-6 border-t border-border flex flex-col gap-3 text-sm w-full">
-  {navItems.map((item) => (
-    <Link
-      key={item.to}
-      to={item.to}
-      className="text-muted-foreground hover:text-foreground no-underline transition-colors"
-      activeProps={{ className: "text-foreground font-semibold" }}
-      activeOptions={{ exact: item.to === "/" }}
-    >
-      {item.label}
-    </Link>
-  ))}
-</nav>
+      {/* Top Nav */}
+      <header className="border-b border-border bg-background/95 backdrop-blur sticky top-0 z-40">
+        <nav className="max-w-6xl mx-auto px-6 py-4 flex flex-wrap gap-x-7 gap-y-2 text-sm">
+          {navItems.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className="text-muted-foreground hover:text-foreground no-underline transition-colors"
+              activeProps={{ className: "text-foreground font-semibold" }}
+              activeOptions={{ exact: item.to === "/" }}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      </header>
 
       {/* Two-column layout */}
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-[260px_1fr] gap-10 md:gap-14">
