@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "nf-DMAD",
     description:
       "Nextflow pipeline for DNA methylation array design",
-    icon: ,
+    //icon: ,
     category: "bioinformatics workflow",
     github: "",
   },
@@ -41,9 +41,9 @@ export const projects: Project[] = [
     title: "Characterising the RNA-protein interaction in budding yeast",
     description:
       "Improved nextflow pipeline for CRAC-seq data analysis and discovery of binding sequences",
-    icon: ScanHeart,
+    //icon: ScanHeart,
     category: "bioinformatics workflow",
-    github: "",
+    github: "https://github.com/JingQiChong/nf_CRACpipeline",
   },
 ];
 
