@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { Github, AudioLines, ScanHeart, type LucideIcon } from "lucide-react";
+import { Github, Workflow, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "nf-DMAD",
     description:
       "Nextflow pipeline for DNA methylation array design",
-    icon: workflow,
+    icon: Workflow,
     category: "bioinformatics workflow",
     github: "https://github.com/JingQiChong/nf-DMAD",
   },
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     title: "Characterising the RNA-protein interaction in budding yeast",
     description:
       "Improved nextflow pipeline for CRAC-seq data analysis and discovery of binding sequences",
-    icon: workflow,
+    icon: Workflow,
     category: "bioinformatics workflow",
     github: "https://github.com/JingQiChong/nf_CRACpipeline",
   },
