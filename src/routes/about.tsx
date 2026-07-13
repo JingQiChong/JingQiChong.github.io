@@ -18,11 +18,9 @@ export const Route = createFileRoute("/bio")({
 });
 
 const bioParagraphs: string[] = [
-  "Throughtout my academic career, I developed a profound interest in understanding the gene regulatory mechanisms that drive phenotypic heterogeneity among individuals," 
-  "particularly within disease contexts. I am interested in uncovering the functional impacts of genetic and epigenetic variants, thereby contribute to genomic medicine" 
-  "and driving progress in precision healthcare. I have a strong background in genetics and extensive hands-on experience in bioinformatics analyses, particularly with "
-  "sequencing data. I also has experience in developing bioinformatics pipeline development, utilising high performance computing clusters for large-scale data analysis" 
-  "and applying machine learning techniques.",
+  "Throughout my academic career, I developed a profound interest in understanding the gene regulatory mechanisms that drive phenotypic heterogeneity among individuals, particularly within disease contexts.",
+  "I am interested in uncovering the functional impacts of genetic and epigenetic variants, thereby contributing to genomic medicine and driving progress in precision healthcare.",
+  "I have a strong background in genetics and extensive hands-on experience in bioinformatics analyses, particularly with sequencing data. I also have experience in bioinformatics pipeline development, utilizing high-performance computing clusters for large-scale data analysis and applying machine learning techniques."
 ];
 
 function Bio() {
