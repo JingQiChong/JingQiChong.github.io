@@ -11,7 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as ProjectsRouteImport } from './routes/projects'
-import { Route as HonorsRouteImport } from './routes/honors'
+import { Route as ResumeRouteImport } from './routes/resume'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -25,9 +25,9 @@ const ProjectsRoute = ProjectsRouteImport.update({
   path: '/projects',
   getParentRoute: () => rootRouteImport,
 } as any)
-const HonorsRoute = HonorsRouteImport.update({
-  id: '/honors',
-  path: '/honors',
+const ResumeRoute = ResumeRouteImport.update({
+  id: '/resume',
+  path: '/resume',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -44,14 +44,14 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/honors': typeof HonorsRoute
+  '/resume': typeof ResumeRoute
   '/projects': typeof ProjectsRoute
   '/publications': typeof PublicationsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/honors': typeof HonorsRoute
+  '/resume': typeof ResumeRoute
   '/projects': typeof ProjectsRoute
   '/publications': typeof PublicationsRoute
 }
@@ -59,22 +59,22 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/honors': typeof HonorsRoute
+  '/resume': typeof ResumeRoute
   '/projects': typeof ProjectsRoute
   '/publications': typeof PublicationsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/honors' | '/projects' | '/publications'
+  fullPaths: '/' | '/about' | '/resume' | '/projects' | '/publications'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/honors' | '/projects' | '/publications'
-  id: '__root__' | '/' | '/about' | '/honors' | '/projects' | '/publications'
+  to: '/' | '/about' | '/resume' | '/projects' | '/publications'
+  id: '__root__' | '/' | '/about' | '/resume' | '/projects' | '/publications'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  HonorsRoute: typeof HonorsRoute
+  ResumeRoute: typeof ResumeRoute
   ProjectsRoute: typeof ProjectsRoute
   PublicationsRoute: typeof PublicationsRoute
 }
@@ -95,11 +95,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/honors': {
-      id: '/honors'
-      path: '/honors'
-      fullPath: '/honors'
-      preLoaderRoute: typeof HonorsRouteImport
+    '/resume': {
+      id: '/resume'
+      path: '/resume'
+      fullPath: '/resume'
+      preLoaderRoute: typeof ResumeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -122,7 +122,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  HonorsRoute: HonorsRoute,
+  ResumeRoute: ResumeRoute,
   ProjectsRoute: ProjectsRoute,
   PublicationsRoute: PublicationsRoute,
 }
