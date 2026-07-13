@@ -131,7 +131,7 @@ function Resume() {
 
         <h3 className="text-lg font-serif font-semibold pt-2">Languages</h3>
         <p>
-          Mandarin Chinese(native), English(bilingual proficiency), Cantonese Chinese(advanced), Malay(advanced), Hakka(native), Korean(basic)
+          Mandarin Chinese (native), English (bilingual proficiency), Cantonese Chinese (advanced), Malay (advanced), Hakka Chinese (native), Korean (basic)
         </p>
       </section>
     </article>

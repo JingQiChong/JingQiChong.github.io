@@ -7,7 +7,7 @@ const navItems = [
   { to: "/", label: "Jing Qi Chong 张靖启" },
   { to: "/about", label: "About Me" },
   { to: "/projects", label: "Projects" },
-  { to: "/resume", label: "Resume" },
+  { to: "/resume", label: "Résumé" },
   //{ to: "/publications", label: "Publications" },
 ] as const;
 
