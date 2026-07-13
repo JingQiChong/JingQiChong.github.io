@@ -4,23 +4,23 @@ import Roslin from '../assets/Roslin.png';
 import Imperial from '../assets/imperial.png';
 import UoE from '../assets/UoE.jpg';
 
-export const Route = createFileRoute("/about")({
+export const Route = createFileRoute("/resume")({
   head: () => ({
     meta: [
-      { title: "About — Jing Qi Chong" },
-      { name: "description", content: "Biography, education, and academic background." },
-      { property: "og:title", content: "About — Jing Qi Chong" },
-      { property: "og:description", content: "Biography, education, and academic background." },
+      { title: "Resume — Jing Qi Chong" },
+      { name: "description", content: "Education, and academic background." },
+      { property: "og:title", content: "Resume — Jing Qi Chong" },
+      { property: "og:description", content: "Education, and academic background." },
     ],
   }),
   component: () => (
     <SiteLayout>
-      <About />
+      <Resume />
     </SiteLayout>
   ),
 });
 
-function About() {
+function Resume() {
   return (
     <article className="space-y-10">
       <section>

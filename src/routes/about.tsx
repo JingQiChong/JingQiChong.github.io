@@ -1,18 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 
-export const Route = createFileRoute("/bio")({
+export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Bio — Jing Qi Chong" },
+      { title: "About — Jing Qi Chong" },
       { name: "description", content: "Biography and research background." },
-      { property: "og:title", content: "Bio — Jing Qi Chong" },
+      { property: "og:title", content: "About — Jing Qi Chong" },
       { property: "og:description", content: "Biography and research background." },
     ],
   }),
   component: () => (
     <SiteLayout>
-      <Bio />
+      <About />
     </SiteLayout>
   ),
 });
@@ -23,7 +23,7 @@ const bioParagraphs: string[] = [
   "I have a strong background in genetics and extensive hands-on experience in bioinformatics analyses, particularly with sequencing data. I also have experience in bioinformatics pipeline development, utilizing high-performance computing clusters for large-scale data analysis and applying machine learning techniques."
 ];
 
-function Bio() {
+function About() {
   return (
     <article className="space-y-10">
       <header>
