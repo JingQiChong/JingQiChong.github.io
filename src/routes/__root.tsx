@@ -38,8 +38,6 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "Jing Qi Chong — Personal website" },
       { name: "twitter:description", content: "Personal website to showcase publications, projects, and awards." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/KH5msiqIfKeuePCjFGtjpU3hsFv1/social-images/social-1776523745575-images.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/KH5msiqIfKeuePCjFGtjpU3hsFv1/social-images/social-1776523745575-images.webp" },
     ],
     links: [
       {

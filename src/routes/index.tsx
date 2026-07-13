@@ -10,7 +10,8 @@ export const Route = createFileRoute("/")({
 const latest = [
   {
     date: "July 2026",
-    content: <> Time for project write up 📝 Also on job hunting.... Any bioinformatics, genomics and cancer related jobs are welcomed.</>,
+    content: <> Time for project write up 📝
+    I am also on job hunting .... If you are hiring in the bioinformatics, genomics and cancer space, please feel free to connect with me!</>,
   },
 ];
 
@@ -31,8 +32,8 @@ function Home() {
       </header>
       <section className="space-y-4 text-[15px] leading-7">
         <p>
-          I am a research postgraduate student at Imperial College London, currently working on my second rotation project in the 
-          Cancer Dynamics Lab at the Francis Crick Institute. I have a profound interest in functional genomics within the context of disease. 
+          I am a research postgraduate student at Imperial College London, currently working on my second rotation project in the <a href="https://www.crick.ac.uk/research/labs/samra-turajlic" className="underline hover:text-foreground transition-colors">Cancer Dynamics Lab</a> 
+          at the Francis Crick Institute. I have a profound interest in functional genomics within the context of disease. 
         </p>
       </section>
 

@@ -23,6 +23,9 @@ export const Route = createFileRoute("/resume")({
 function Resume() {
   return (
     <article className="space-y-10">
+      <p className="text-sm text-muted-foreground">
+          Detailed PDF version is available upon request via <a href="mailto:jc8425@imperial.ac.uk" className="hover:text-foreground transition-colors">email</a>. Last updated in July 2026.
+      </p>
       <section>
         <h2 className="text-2xl font-serif font-semibold mb-4 pb-2 border-b border-border">Education</h2>
         <ul className="space-y-4">
@@ -107,6 +110,29 @@ function Resume() {
             </div>
           </li>
         </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-serif font-semibold mb-4 pb-2 border-b border-border">Skills</h2>
+        <h3 className="text-lg font-serif font-semibold pt-2">Bioinformatics analysis</h3>
+        <p>
+          Whole Genome sequencing, CRAC-seq, single-cell and bulk RNA-seq, single-cell ATAC-seq, Whole genome Bisulphite Sequencing, Reduced representation Bisulphite Sequencing, TCR sequencing
+        </p>
+        
+        <h3 className="text-lg font-serif font-semibold pt-2">Computer Languages</h3>
+        <p>
+          Python, Bash, Nextflow, R, markdown
+        </p>
+        
+        <h3 className="text-lg font-serif font-semibold pt-2">Technical software</h3>
+        <p>
+          Git, Conda, scikit-learn, Jupyter Notebook, Singularity, mkdocs
+        </p>
+
+        <h3 className="text-lg font-serif font-semibold pt-2">Languages</h3>
+        <p>
+          Mandarin Chinese(native), English(bilingual proficiency), Cantonese Chinese(advanced), Malay(advanced), Hakka(native), Korean(basic)
+        </p>
       </section>
     </article>
   );
