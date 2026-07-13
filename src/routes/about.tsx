@@ -27,8 +27,8 @@ function About() {
       <div className="space-y-6">
         <section className="space-y-4 text-[15px] leading-7">
           <p>
-            👋 Hi, I am Jing Qi - a bioinformatician-in-training currently pursuing MRes Biomedical Research, specialising in data science at Imperial College London. I am working on my second
-            MRes project which focuses on Cancer and TCR sequencing and actively learning everything related to it.
+            👋 Hi, I am Jing Qi - a bioinformatician-in-training currently pursuing MRes Biomedical Research, specialising in data science at Imperial College London. I am currently working on my second
+            MRes project, focusing on Cancer and TCR sequencing. I am actively learning everything related to it.
           </p>
 
           <h3 className="text-lg font-serif font-semibold pt-2">🔬 Research background</h3>
@@ -36,12 +36,17 @@ function About() {
             During my recent MRes project, I developed computational pipelines to analyse 10x scMultiome data (snRNAseq + snATACseq). This involved implementing rigorous quality control and 
             integration architectures, including doublet removals via SOLO, ambient RNA correction using ScAR, automated cell annotation with Azimuth and muti-omics joint embedding using MULTIVI. 
             Through this work, I have developed a deep familiarity with the Scanpy, scverse, and Seurat ecosystems. 
+          </p>
+
+          <p>
             Previously, I was a research assistant in the Tenesa lab at the Roslin Institute, working on livestock epigenomics. There, I worked with Dr Pau Navarro, Prof James Prendergast and Prof Albert 
-            Tenesa to develop the first high-density DNA methylation array for cattle using a self-designed bioinformatics workflow. 
-            Before this, I studied for my BSc (Hons) Biological Sciences (Genetics) at the University of Edinburgh. In my final (honours) year, I undertook a bioinformatics-orientated project in The Wallace Lab, 
+            Tenesa to develop the first high-density DNA methylation array for cattle using a self-designed bioinformatics workflow. Before this, I studied for my BSc (Hons) Biological Sciences (Genetics) at the University of Edinburgh. In my final (honours) year, I undertook a bioinformatics-orientated project in The Wallace Lab, 
             under the supervision of Dr Edward Wallace and Dr Sam Haynes. I characterised the binding activity of RNA-binding proteins (with a focus on Khd1) in budding yeast, Saccharomyces cerevisiae. In the summer 
-            of 2021, I also completed a two-month placement with Prof James Prendergast,examining a Boran genome to identify a potential causal variant conferring tolerance to East Coast Fever. Across these projects, 
-            I developed a strong background in bioinformatics, particularly in next-generation sequencing data analysis and bioinformatics pipeline development. I have also dabbled in applying machine learning models to multi-omics.
+            of 2021, I also completed a two-month placement with Prof James Prendergast,examining a Boran genome to identify a potential causal variant conferring tolerance to East Coast Fever. 
+          </p>
+
+          <p>
+            Across these projects, I developed a strong background in bioinformatics, particularly in next-generation sequencing data analysis and bioinformatics pipeline development. I have also dabbled in applying machine learning models to multi-omics.
           </p>
 
           <h3 className="text-lg font-serif font-semibold pt-2">🔎 Scientific interest</h3>
