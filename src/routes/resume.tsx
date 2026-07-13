@@ -86,7 +86,7 @@ function Resume() {
             <div className="flex-1">
               <div className="flex justify-between items-start gap-4">
                 <div className="font-semibold text-pretty">Honours Project Student</div>
-                <div className="text-sm text-muted-foreground whitespace-nowrap shrink-0 mt-0.5">2022-2022</div>
+                <div className="text-sm text-muted-foreground whitespace-nowrap shrink-0 mt-0.5">2022</div>
               </div>
               <div className="text-sm text-muted-foreground mt-0.5">University of Edinburgh</div>
             </div>
@@ -101,7 +101,7 @@ function Resume() {
             <div className="flex-1">
               <div className="flex justify-between items-start gap-4">
                 <div className="font-semibold text-pretty">Summer Placement</div>
-                <div className="text-sm text-muted-foreground whitespace-nowrap shrink-0 mt-0.5">2021-2021</div>
+                <div className="text-sm text-muted-foreground whitespace-nowrap shrink-0 mt-0.5">2021</div>
               </div>
               <div className="text-sm text-muted-foreground mt-0.5">The Roslin Institute</div>
             </div>

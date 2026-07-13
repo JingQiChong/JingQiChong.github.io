@@ -7,7 +7,7 @@ const navItems = [
   { to: "/", label: "Jing Qi Chong 张靖启" },
   { to: "/about", label: "About Me" },
   { to: "/projects", label: "Projects" },
-  { to: "/resume", label: "Resume/CV" },
+  { to: "/resume", label: "Resume" },
   //{ to: "/publications", label: "Publications" },
 ] as const;
 
@@ -21,7 +21,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <Link
               key={item.to}
               to={item.to}
-              className="text-muted-foreground hover:text-foreground no-underline transition-colors"
+              className="hover:text-foreground no-underline transition-colors"
+              inactiveProps={{ className: "text-muted-foreground" }}
               activeProps={{ className: "text-foreground font-semibold" }}
               activeOptions={{ exact: item.to === "/" }}
             >
@@ -53,11 +54,19 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0 text-muted-foreground" />
-                <a href="mailto:jc8425@imperial.ac.uk">Email</a>
+                {/* Clean, semantic anchor styling */}
+                <a href="mailto:jc8425@imperial.ac.uk" className="hover:text-foreground transition-colors">Email</a>
               </li>
               <li className="flex items-center gap-2">
                 <Linkedin className="w-4 h-4 shrink-0 text-muted-foreground" />
-                <a href="www.linkedin.com/in/jing-qi-chong-2b0a7919a" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a 
+                  href="https://www.linkedin.com/in/jing-qi-chong-2b0a7919a" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  LinkedIn
+                </a>
               </li>
             </ul>
           </div>
